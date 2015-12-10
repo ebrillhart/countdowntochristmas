@@ -9,6 +9,9 @@ var MyApp = React.createClass({
 	clear: function() {
 		this.setState({toDos: []})
 	},
+	strikethrough: function() {
+		this.css("text-decoration", "line-through");
+	},
 	getInitialToDos: function() {
 		this.setState({toDos: this.toDos})
 	},
@@ -27,14 +30,12 @@ var MyApp = React.createClass({
 			<div className="well col-md-3 toDoList">
 			  <h1>Christmas To Do List</h1>
 			  <form onSubmit={this.addItem}>
-			  	<input type='text' placeholder='ex. Buy Gifts' value={this.state.newItem}
+			  	<input type='text' placeholder='ex. Buy Gifts' className='inputlist' value={this.state.newItem}
 			  	onChange={this.newItemChange}
 			  	/>
 			  </form>
 			  <button className='btn btn-danger' onClick={this.clear}>CLEAR</button>
-			  <button className='btn btn-success' onClick={this.getInitialToDos}>RESET</button>
-
-			  <ToDoList items={this.state.toDos}/>
+			  <ToDoList onClick={this.strikethrough} items={this.state.toDos}/>
 			</div>
 		)
 	}	
