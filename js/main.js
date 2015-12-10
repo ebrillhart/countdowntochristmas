@@ -2,7 +2,7 @@
 
 // var toDoItems = ['Buy Groceries', 'Mow the Lawn', 'Homework', 'Haircut', 'Wash Rally', 'Go to the Bank']
 var MyApp = React.createClass({
-	toDos: ['Buy Groceries', 'Mow the Lawn', 'Homework', 'Haircut', 'Wash Rally', 'Go to the Bank'],
+	toDos: [''],
 	getInitialState: function() {
 		return {toDos: this.toDos, newItem: '' };
 	},
@@ -24,12 +24,12 @@ var MyApp = React.createClass({
 	},
 	render: function() {
 		return (
-			<div className="well">
-			  <h1>Hello</h1>
+			<div className="well col-md-3 toDoList">
+			  <h1>Christmas To Do</h1>
 			  <button className='btn btn-primary' onClick={this.clear}>Clear</button>
 			  <button className='btn btn-success' onClick={this.getInitialToDos}>Reset</button>
 			  <form onSubmit={this.addItem}>
-			  	<input type='text' value={this.state.newItem}
+			  	<input type='text' placeholder='ex. Buy Gifts' value={this.state.newItem}
 			  	onChange={this.newItemChange}
 			  	/>
 			  </form>
