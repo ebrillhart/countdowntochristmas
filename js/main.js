@@ -25,14 +25,15 @@ var MyApp = React.createClass({
 	render: function() {
 		return (
 			<div className="well col-md-3 toDoList">
-			  <h1>Christmas To Do</h1>
-			  <button className='btn btn-primary' onClick={this.clear}>Clear</button>
-			  <button className='btn btn-success' onClick={this.getInitialToDos}>Reset</button>
+			  <h1>Christmas To Do List</h1>
 			  <form onSubmit={this.addItem}>
 			  	<input type='text' placeholder='ex. Buy Gifts' value={this.state.newItem}
 			  	onChange={this.newItemChange}
 			  	/>
 			  </form>
+			  <button className='btn btn-primary' onClick={this.clear}>Clear</button>
+			  <button className='btn btn-success' onClick={this.getInitialToDos}>Reset</button>
+
 			  <ToDoList items={this.state.toDos}/>
 			</div>
 		)
