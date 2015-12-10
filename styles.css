@@ -2,6 +2,7 @@
 	bottom: 0;
 	float: right;
 	position: absolute;
+	height: 40%;
 }
 
 #reactApp {

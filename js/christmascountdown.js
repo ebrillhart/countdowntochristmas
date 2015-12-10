@@ -1,5 +1,4 @@
-
-      $(function() {
+var countdown = function() {
         var endDate = "December 25, 2015 00:00:00";
 
         $('.countdown.simple').countdown({ date: endDate });
@@ -56,4 +55,4 @@
           }
         });
 
-      });
+      };
