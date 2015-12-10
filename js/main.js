@@ -28,7 +28,7 @@ var MyApp = React.createClass({
 	render: function() {
 		return (
 			<div className="well col-md-3 toDoList">
-			  <h1>Christmas To Do List</h1>
+			  <h3 className="text-center">Christmas To Do List</h3>
 			  <form onSubmit={this.addItem}>
 			  	<input type='text' placeholder='ex. Buy Gifts' className='inputlist' value={this.state.newItem}
 			  	onChange={this.newItemChange}
