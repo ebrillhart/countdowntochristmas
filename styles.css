@@ -3,6 +3,18 @@
 	float: right;
 	position: absolute;
 	height: 40%;
+	background: black;
+	opacity: 0.8;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding-top: 0px;
+	color: white;
+	border: 1px solid black;
+}
+
+.btn {
+	margin-right: 10px;
+	margin-top: 5px;
 }
 
 #reactApp {
