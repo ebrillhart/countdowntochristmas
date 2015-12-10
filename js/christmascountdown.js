@@ -1,4 +1,4 @@
-    <script type="text/javascript">
+
       $(function() {
         var endDate = "December 25, 2015 00:00:00";
 
@@ -57,4 +57,3 @@
         });
 
       });
-    </script>
