@@ -1,8 +1,6 @@
 .toDoList {
-	bottom: 0;
 	float: right;
-	position: absolute;
-	height: 40%;
+	height: 100%;
 	background: black;
 	opacity: 0.8;
 	font-family: 'Roboto', sans-serif;
@@ -21,7 +19,10 @@
 
 #reactApp {
 	width: 100%;
-	position: absolute bottom 0;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 0;
 }
 
 body {
