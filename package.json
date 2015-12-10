@@ -1,0 +1,19 @@
+{
+  "name": "countdowntochristmas",
+  "version": "1.0.0",
+  "description": "See how little time left you have to get everything done on your Christmas to-do list!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrittanyIRL/countdowntochristmas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrittanyIRL/countdowntochristmas/issues"
+  },
+  "homepage": "https://github.com/BrittanyIRL/countdowntochristmas#readme"
+}
