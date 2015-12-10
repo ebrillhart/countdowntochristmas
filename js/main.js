@@ -31,8 +31,8 @@ var MyApp = React.createClass({
 			  	onChange={this.newItemChange}
 			  	/>
 			  </form>
-			  <button className='btn btn-primary' onClick={this.clear}>Clear</button>
-			  <button className='btn btn-success' onClick={this.getInitialToDos}>Reset</button>
+			  <button className='btn btn-danger' onClick={this.clear}>CLEAR</button>
+			  <button className='btn btn-success' onClick={this.getInitialToDos}>RESET</button>
 
 			  <ToDoList items={this.state.toDos}/>
 			</div>
