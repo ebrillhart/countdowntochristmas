@@ -1,0 +1,10 @@
+.toDoList {
+	bottom: 0;
+	float: right;
+	position: absolute;
+}
+
+#reactApp {
+	width: 100%;
+	position: absolute bottom 0;
+}

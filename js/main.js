@@ -24,7 +24,7 @@ var MyApp = React.createClass({
 	},
 	render: function() {
 		return (
-			<div className="well">
+			<div className="well col-md-3 toDoList">
 			  <h1>Hello</h1>
 			  <button className='btn btn-primary' onClick={this.clear}>Clear</button>
 			  <button className='btn btn-success' onClick={this.getInitialToDos}>Reset</button>
