@@ -1,45 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React Components</title>
+    <title>Countdown</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../dest/jquery.countdown.js"></script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <script type="text/babel" src="js/main.js"></script>
-    
-    <script src="js/christmascountdown.js"></script>
-  </head>
-  <body>
-    <!-- countdown -->
-    <div class="countdown styled" data-date="December 25, 2016 00:00:00"></div>
-    <!-- end countdown -->
-
-    <div id="reactApp">
-   
-    </div>
-
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 
     <script type="text/javascript">
       $(function() {
-        var endDate = "December 25, 2015 00:00:00";
+        var endDate = "June 7, 2087 15:03:25";
 
         $('.countdown.simple').countdown({ date: endDate });
 
@@ -97,5 +68,29 @@
 
       });
     </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>COUNTDOWN</h1>
+
+      <h2>Simple text countdown</h2>
+      <div class="countdown simple" data-date="December 25, 2016 00:00:00"></div>
+
+      <h2>Styled output</h2>
+      <div class="countdown styled"></div>
+
+      <h2>Countdown with callback</h2>
+      <p>Click on the green box to reset the counter to 10 sec.</p>
+      <div class="countdown callback"></div>
+      
+      <h2>Countdown with offset</h2>
+      <p class="offset-notice"></p>
+      <div class="offset-server">Countdown according to server time: 
+        <div class="countdown offset"></div>
+      </div>
+      <div class="offset-client">Countdown according to your time: 
+        <div class="countdown offset"></div>
+      </div>
+    </div>
   </body>
 </html>
