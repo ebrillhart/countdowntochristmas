@@ -10,6 +10,7 @@
 	padding-top: 0px;
 	color: white;
 	border: 1px solid black;
+	margin-bottom: 2px;
 }
 
 .btn {
@@ -42,5 +43,9 @@ body {
 html {
 	min-height: 100%;
 	width: 100%;
+}
+
+.inputlist {
+	color: black;
 }
 
