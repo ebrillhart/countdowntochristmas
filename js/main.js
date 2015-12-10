@@ -2,7 +2,7 @@
 
 // var toDoItems = ['Buy Groceries', 'Mow the Lawn', 'Homework', 'Haircut', 'Wash Rally', 'Go to the Bank']
 var MyApp = React.createClass({
-	toDos: [''],
+	toDos: [],
 	getInitialState: function() {
 		return {toDos: this.toDos, newItem: '' };
 	},
